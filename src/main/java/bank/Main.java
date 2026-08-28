@@ -17,7 +17,7 @@ public class Main {
 
         Account cuenta = new Account("1234567", (int) 43000.0, "Ahorros");
 
-        Client cliente = new Client("1", "Fayuth Rojas", "1067596127", , "1234");
+        Client cliente = new Client("1", "Fayuth Rojas", "1067596127",  cuenta, "1234");
 
         Cajero cajero = new Cajero("ASD", "Barraqulla");
 
@@ -42,18 +42,33 @@ public class Main {
         System.out.print("Selecione una opcion:");
         System.out.print("                  ");
 
-
-        scanner.nextLine();
+        int option = scanner.nextInt();
 
         System.out.print("                  ");
 
+        if(option == 1) {
+            System.out.print("Esta es tu balance" + cuenta.getBalance());
+        }
+
+        if(option == 2) {
+            System.out.print("Cuanto quieres depositar?");
+            double monto = scanner.nextInt();
+
+            cuenta.deposit(monto);
+
+        }
+        if(option == 3) {
+            System.out.print("Cuanto quieres retirar?");
+            double monto = scanner.nextInt();
+
+            if(monto > 400000);
+
+        }
 
         System.out.print("");
 
-
     }
 
-import java.util.Scanner;
 
 public class Principal {
     public static void main(String[] args) {
