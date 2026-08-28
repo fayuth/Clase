@@ -36,17 +36,19 @@ public class Main {
 
         int opcion = 0;
         do {
+            System.out.println("\n                ");
+
             System.out.println("\n Menu");
             System.out.println("1. Consultar saldo");
             System.out.println("2. Depositar dinero");
             System.out.println("3. Retirar dinero");
             System.out.println("4. Cambiar clave");
             System.out.println("5. Salir");
-
+            System.out.println("\n                ");
             System.out.println("0. Pon 0 para cancelar");
-
+            System.out.println("\n                ");
             System.out.print("Seleccione una opción: ");
-            
+            System.out.println("\n                ");
             try {
                 opcion = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
