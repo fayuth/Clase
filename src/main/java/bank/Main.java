@@ -34,6 +34,21 @@ public class Main {
 
         System.out.print("Clave correcta");
 
+        System.out.print("                  ");
+        System.out.print("Menu");
+        System.out.print("Consultar saldo");
+        System.out.print("Depositar");
+        System.out.print("Retirar");
+        System.out.print("Selecione una opcion:");
+        System.out.print("                  ");
+
+
+        scanner.nextLine();
+
+        System.out.print("                  ");
+
+
+        System.out.print("");
 
 
     }
