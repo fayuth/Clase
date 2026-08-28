@@ -12,7 +12,7 @@ public class Cajero {
     private int RetirosHoy;
 
 
-    public  Cajero(String IdCajero, String Ubicacion){
+    public Cajero(String IdCajero, String Ubicacion){
 
         this.IdCajero = IdCajero;
 

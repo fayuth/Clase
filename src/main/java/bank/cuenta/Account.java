@@ -16,10 +16,11 @@ public class Account {
         this.AccountType = AccountType;
     }
 
-    public void deposit(double monto) {
+    public boolean deposit(double monto) {
         if(monto > 0) {
             Balance += monto;
         }
+        return false;
     }
 
     public boolean retira(double monto) {
